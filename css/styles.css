@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+
+body{
+    font-family: 'open sans';
+}
+
+/* Navegador */
+
+#logo{
+    width: 150px; 
+    align-items: center;  
+    margin: 20px 20px 20px 20px; 
+}
+
+.container-fluid{
+    position: fixed;
+    background-color: #171e22;
+    height: 150px;
+    padding-top: 50px;
+    z-index: 2000000000px;
+   
+}
+
+.dropdown-menu{ 
+    background-color: #171e22;
+}
+
+
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 750px;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.675), hsla(120, 82%, 33%, 0.413)), url(/img/fondo.jpg); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.675), hsla(120, 82%, 33%, 0.423)), url(/img/fondo.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    
+
+}
+
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    padding-top: 300px;
+    font-size: 80px;
+    color: #fff;
+    font-family: 'Dancing Script';
+    text-shadow: #171e22 0.1em 0.1em 0.2em;
+}
+
+.wave{
+    position: static;
+    bottom: 0;
+    width: 100%;
+    margin-top: 170px;
+}
+
+
+/* Contenido */
+
+
+.contenedor{
+    background: #171e22;
+    padding: 80px 0;
+    
+}
+
+.contenido{
+    padding: 60px 0;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #212b31;
+    border-radius: 20px;
+    
+}
+
+.titulo{
+    color: #28b440;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Satisfy';
+}
+
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+
+.imagen{
+    width: 800px;
+    height: 400px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+  
+    
+}
+
+.imagen > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-indicators{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    background: hsla(130, 64%, 43%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+
+}
+.hover-galeria p{
+    color: #fff;
+}
+.imagen:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+
+
+/* MAPA */
+
+.mapa{
+    padding: 0 70px;
+
+}
+
+/* Formulario */
+
+.formulario{
+    padding: 0 70px;
+
+}
+
+.titulo-contactanos{
+    color: #28b440;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Satisfy';
+
+}
+
+.form-label{
+    color: #28b440;
+    font-size: 30px;
+}
+
+.nombre{
+    display: inline-block;
+    width: 450px;
+    margin-bottom: 0px;
+    
+}
+
+.apellido{
+    display: inline-block;
+    width: 450px;
+}
+
+.correo{
+    margin-top: 20px;
+}
+
+.comentario{
+    margin-top: 20px;
+}
+
+
+#boton{
+    margin-top: 30px;
+}
+
+/* footer */
+
+footer{
+    background-color: #212b31;
+    padding: 60xp 0 30xp 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #28b440;
+}
+
+.contenedor-foo{
+    text-align: center;
+
+}
+
+.contenedor-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #28b440;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contenedor-foo p{
+    color: #fff;
+}
+
+.titulo-final{
+    color: #fff;
+   text-align: center;
+   font-size: 30px;
+  margin: 10px;
+}
+
+
+
+
